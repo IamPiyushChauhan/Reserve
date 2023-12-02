@@ -1,0 +1,499 @@
+/* App.css */
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page {
+  margin: 0;
+  padding: 0;
+  background-image: url('./bg.jpg'); /* Reference to the image in the public folder */
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center; /* Center the background image */
+
+  height: 100vh; /* 100% of the viewport height */
+  width: 100vw; /* 100% of the viewport width */
+}
+
+/* Add more styles as needed for your application */
+
+.centered-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Dropdown.css */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-toggle {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-list {
+  width: 100%; 
+  margin: 1px;
+  max-height: 15em; 
+  overflow: scroll;
+}
+
+.dropdown-input-div {
+  display:  flex;
+  justify-content: space-around;
+  padding: 1px; 
+}
+
+.dropdown-input-div input{
+  padding: 1px;
+  padding-bottom: 2px;
+  outline: none; 
+  border: none;
+}
+
+.dropdown-input-div input:focus{
+  outline: none;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dropdown-item .city{
+  font-size: 0.5em;
+  font-weight: bold;  
+}
+
+.dropdown-item .state{
+  font-size: 0.25em;
+  color: #5A5A5A;  
+}
+
+.dropdown-button {
+  padding: 1em;
+  width: 20vw;
+}
+
+/* YourComponent.css */
+
+.flex-container {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  border: 0.5px solid black;
+}
+
+.dropdown-container {
+  
+  
+}
+
+/* Remove right border for the first child */
+.dropdown-container:first-child {
+  border-right: none;
+}
+
+/* Remove left border for the last child */
+.dropdown-container:last-child {
+  border-left: none;
+}
+
+
+
+
+.dropdown-button-n {
+  display: flex;
+  justify-content: space-between;
+  color: #5A5A5A;
+  width: 100%;
+  padding-bottom: 0.5em;
+}
+
+
+
+.dropdown-button-city {
+  width: 100%;
+  font-weight: 4em;
+}
+
+.dropdown-button-india {
+  width: 100%;
+  height: 10%;
+}
+.search-button-div{
+  margin-top: 0.625em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+/* Accordion.css */
+.accordion {
+  width: 90vw;
+  margin: 2em;
+  padding: 2em;
+
+}
+.accordion-child {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin: 0.5em;
+  width: 100%;
+}
+
+.title {
+  /* background-color: #f1f1f1; */
+  padding: 10px;
+  cursor: pointer;
+  /* border: 1px solid #ddd; */
+ 
+}
+
+.content {
+  display: none;
+  padding: 10px;
+  border-top: 0;
+  /* border: 1px solid #ddd; */
+}
+
+.active {
+  display: block;
+}
+
+
+
+
+/* seat */
+.parentbox {
+  margin: 1px;
+  border: solid black 1px;
+  width: 100px;
+  height:  50px;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 5%;
+}
+
+.childBox {
+  border: solid black 1px;
+  width: 10px;
+  height:  30px;
+  margin-top: 8px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 15%;
+}
+
+/* buses */
+
+.grid-container {
+  width: 70%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+
+  gap: 0.5%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 90%;
+  height: 90%;
+  margin: 10%;
+
+}
+
+.grid-item.empty {
+  visibility: hidden;
+}
+
+.parent-box {
+  margin: 1px;
+  border: solid black 1px;
+  width: 95%;
+  height:  60%;
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
+.child-box {
+  border: solid black 1px;
+  width: 8%;
+  height:  65%;
+  margin-top: 2%;
+  margin-right: 10%;
+  background-color: white;
+  border-radius: 15%;
+}
+
+.traveller-details {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 3em;
+  height: 20vh;
+  width: 70vw;
+  
+}
+
+.traveller-details label {
+  display: block;
+  margin-bottom: 1em;
+  color: #808080
+}
+
+.traveller-details input{
+  padding: 5%;
+  font-size: 1em;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none; 
+  width: 60%;
+  color: #808080;
+}
+
+.traveller-details select {
+  padding: 5%;
+  font-size: 1em;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none; 
+  width: 65%;
+  color: #808080;
+}
+
+.essatial-info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+}
+
+.bus-fare {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 2em;
+}
+
+.bus-fare-price-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bus-fare-price{
+  font-weight: bold;
+}
+
+.bus-fare-name {
+  color: #808080;
+}
+
+
+.BUS-DETAIL {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+
+.success-page {
+  margin: 0;
+  padding: 0;
+  
+
+  height: 100vh; /* 100% of the viewport height */
+  width: 100vw; /* 100% of the viewport width */
+}
+
+.navBar {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 4%;
+  background-color: white;
+  padding: 1%;
+  border-bottom: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: static;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: orange;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: orange;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(235, 210, 164);
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+}
+
+.footer {
+  background-color: #e0e0e0; 
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.loading-spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%; /* Adjust the height as needed */
+}
+
+.loading-spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
