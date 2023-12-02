@@ -67,7 +67,7 @@ function SuccessPage() {
     setTiketID(ticketId)
     const fetchData = async () => {
       try {
-        const response = await fetch(`/passanger-ticket-info?ticket_id=${ticketId}`);
+        const response = await fetch(`https://reserve-backend-la7a.onrender.com/passanger-ticket-info?ticket_id=${ticketId}`);
 
         if (!response.ok) {
           throw new Error(`Network response was not ok, status: ${response.status}`);
@@ -80,7 +80,7 @@ function SuccessPage() {
        const busID = data[0].bus_and_seats._id
        console.log("Bus Id"+busID)
 
-       const response2 = await fetch(`/bus/find-by-id?id=${busID}`);
+       const response2 = await fetch(`https://reserve-backend-la7a.onrender.com/bus/find-by-id?id=${busID}`);
 
         if (!response2.ok) {
           throw new Error(`Network response was not ok, status: ${response.status}`);

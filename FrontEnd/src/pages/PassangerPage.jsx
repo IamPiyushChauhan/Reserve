@@ -104,7 +104,7 @@ function PassangerPage() {
         
         window.localStorage.setItem('ticket_id', uniqueId);
           const apiCall = async () =>{
-                await axios.post("/bus/payment", {bus_and_seats: seletedBusAndSeat, passanger_details: state, ticket_id: uniqueId})
+                await axios.post("https://reserve-backend-la7a.onrender.com/bus/payment", {bus_and_seats: seletedBusAndSeat, passanger_details: state, ticket_id: uniqueId})
                  .then(response => {console.log(response.data)
                     if(response.data.url != undefined){
                         window.location.replace(response.data.url)

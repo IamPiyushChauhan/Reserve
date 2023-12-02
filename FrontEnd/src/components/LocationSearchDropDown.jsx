@@ -23,7 +23,7 @@ function LocationSearchDropDown({seletedCity,seletedState,getSelectedItem,str}) 
     
         const timeoutId = setTimeout(() => {
           setIsLodding(true)
-          axios.get('/city', { params: { city_name: searchedCity}})
+          axios.get('https://reserve-backend-la7a.onrender.com/city', { params: { city_name: searchedCity}})
             .then(response => {
             const cityData = response.data;
             console.log('City Data:', cityData);

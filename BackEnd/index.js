@@ -8,6 +8,9 @@ const cityRouter = require('./routes/cityRouter')
 const busRouter = require('./routes/busRouter')
 const webhookRouter = require('./routes/webhookRoutes')
 const passagerTicketInfoRouter = require('./routes/passagerTicketInfoRouter')
+const cors = require('cors')
+app.use(cors())
+
 app.use(bodyParser.json());
 
 

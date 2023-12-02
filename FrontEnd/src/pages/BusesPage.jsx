@@ -87,7 +87,7 @@ function BusesPage() {
         "date": date
         }
         async function apiCall(){
-          await axios.get('/bus',{params: data})
+          await axios.get('https://reserve-backend-la7a.onrender.com/bus',{params: data})
           .then(response => {
             busesDispatch({type: "ADD_BUS_DATA",payLoad: response.data})
             let data = response.data
