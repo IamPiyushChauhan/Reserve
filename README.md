@@ -42,13 +42,13 @@ STRIPE_PRIVATE_KEY=sk_test_your_stripe_private_key
 CLIENT_URL=http://localhost:3000
 ```
 
-5. Start the Backend server:
+4. Start the Backend server:
 
     ```bash
     cd BackEnd
     npm start
     ```
-6. Start the FrontEnd server:
+5. Start the FrontEnd server:
 ```bash
     cd FrontEnd
     npm start
